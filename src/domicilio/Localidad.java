@@ -28,12 +28,12 @@ public class Localidad {
         this.provincia = new Provincia(nombreProvincia, codigo_3166_2);
     }
 
-    public Localidad(int id, String nombre, String codigoPostal, String nombreProvincia) {
+    public Localidad(int id, String nombre, String codigoPostal, byte idProvincia, String nombreProvincia, String codigo_3166_2) {
         this.id = id;
         this.nombre = nombre;
         this.codigoPostal = codigoPostal;
 
-        this.provincia = new Provincia(nombreProvincia);
+        this.provincia = new Provincia(idProvincia, nombreProvincia, codigo_3166_2);
     }
 
     @Override
