@@ -16,10 +16,10 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        Asociado asociado1 = new Asociado("Julio Cesar", "Silva", "M", "03/03/1981");
-        Asociado asociado2 = new Asociado("Sabina Ximena", "Capelli", "F", "08/01/1986");
+        Asociado asociado1 = new Asociado("Homero", "Simpson", "M", "03/08/1981");
+        Asociado asociado2 = new Asociado("Marge", "Simpson", "F", "08/03/1986");
 
-        Domicilio domicilio1 = new Domicilio("Manuel A. Sáez", "1253", "5", "3", "Las Heras", "5539", "Mendoza", "AR-M");
+        Domicilio domicilio1 = new Domicilio("Falsa", "123", "2", "3", "Springfield", "321", "United States", "US-S");
 
         asociado1.setEstaDomiciliadoEn(domicilio1);
         asociado2.setEstaDomiciliadoEn(domicilio1);
