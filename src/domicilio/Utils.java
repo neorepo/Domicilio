@@ -5,6 +5,8 @@
  */
 package domicilio;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author neo
@@ -18,13 +20,14 @@ public class Utils {
         return str.trim().replaceAll("\\s\\s+", " ");
     }
 
-    public static int getPositiveInt(String str) {
-        if (str == null) {
+    // getPositiveInt("Ingrese su edad: "); 33
+    public static int getPositiveInt(String message) {
+        if (message == null) {
             return 0;
         }
         int n = 0;
         do {
-            n = getInt(str);
+            n = getInt(JOptionPane.showInputDialog(message));
         } while (n < 1);
         return n;
     }
