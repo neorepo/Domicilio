@@ -16,6 +16,9 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        int age = Utils.getPositiveInt("Ingrese su edad:");
+        System.out.println("La edad ingresada es: " + age);
+
         Provincia provincia = new Provincia((byte) 1, "Buenos Aires", "AR-B");
         System.out.println(provincia);
         Localidad localidad = new Localidad(1, "Godoy Cruz", "5500", (byte) 13, "Mendoza", "AR-M");
