@@ -16,11 +16,16 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        Provincia provincia = new Provincia((byte) 1, "Buenos Aires", "AR-B");
+        System.out.println(provincia);
+        Localidad localidad = new Localidad(1, "Godoy Cruz", "5500", (byte) 13, "Mendoza", "AR-M");
+        System.out.println(localidad);
+
         Persona asociado = new Asociado("Lisa", "Simpson", "F", "23/01/2005");
 
         Domicilio domicilio1 = new Domicilio("Falsa", "123", "2", "3", "Springfield", "321", "United States", "US-S");
         Asociado asociado1 = new Asociado("Homero", "Simpson", "M", "03/08/1981", domicilio1);
-        
+
         Asociado asociado2 = new Asociado("Marge", "Simpson", "F", "08/03/1986");
         asociado2.setEstaDomiciliadoEn(domicilio1);
 
