@@ -23,6 +23,14 @@ public abstract class Persona {
     public Persona() {
     }
 
+    public Persona(String nombre, String apellido, String sexo, String fechaNacimiento, Domicilio estaDomiciliadoEn) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.sexo = sexo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.estaDomiciliadoEn = estaDomiciliadoEn;
+    }
+
     public Persona(String nombre, String apellido, String sexo, String fechaNacimiento) {
         this.nombre = nombre;
         this.apellido = apellido;
