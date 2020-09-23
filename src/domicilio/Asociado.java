@@ -20,8 +20,15 @@ public class Asociado extends Persona {
 
     private String condicionIngreso;
 
+    public Asociado(String nombre, String apellido, String sexo, String fechaNacimiento, Domicilio estaDomiciliadoEn) {
+        super(nombre, apellido, sexo, fechaNacimiento, estaDomiciliadoEn);
+        // seteamos un valor por defecto (ACTIVO)
+        this.condicionIngreso = CONDICION_ACTIVO;
+    }
+
     public Asociado(String nombre, String apellido, String sexo, String fechaNacimiento) {
         super(nombre, apellido, sexo, fechaNacimiento);
+        // seteamos un valor por defecto (ACTIVO)
         this.condicionIngreso = CONDICION_ACTIVO;
     }
 
